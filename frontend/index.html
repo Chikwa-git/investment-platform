@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Investment Platform</title>
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <style>
+      /* opcional: um “produto vibe” sem inventar muito */
+      body { background: #f6f7fb; }
+      .card { border: 0; box-shadow: 0 10px 30px rgba(16, 24, 40, 0.06); }
+      .muted-small { font-size: .85rem; color: #6c757d; }
+      .rate-big { font-size: 2rem; font-weight: 700; letter-spacing: -0.02em; }
+      .badge-stale { background: #fff3cd; color: #664d03; border: 1px solid #ffe69c; }
+    </style>
+  </head>
+
+  <body>
+    <nav class="navbar bg-white border-bottom">
+      <div class="container py-2">
+        <span class="navbar-brand mb-0 h1">Sem Nome ainda</span>
+        <span class="text-secondary">MVP</span>
+      </div>
+    </nav>
+
+<main class="container my-4" style="max-width: 980px;">
+  <!-- Hero Section -->
+  <section class="py-4 py-md-5">
+    <div class="row align-items-center g-4">
+      <div class="col-12 col-lg-7">
+        <h1 class="display-6 fw-bold mb-2">Entenda o mercado sem complicação</h1>
+        <p class="lead text-secondary mb-3">
+          Dados reais, contexto e explicações educativas. Sem recomendações de compra ou venda.
+        </p>
+
+        <div class="d-flex flex-wrap gap-2">
+          <a href="#market" class="btn btn-primary">Veja explicações educativas</a>
+          <a href="#stocks" class="btn btn-outline-secondary">Pesquisar uma ação</a>
+        </div>
+
+        <div class="mt-3 text-secondary" style="font-size: .9rem;">
+          * Conteúdo educacional. Não é recomendação de investimento.
+        </div>
+      </div>
+
+      <div class="col-12 col-lg-5">
+        <div class="card p-3">
+          <div class="fw-semibold mb-2">O que você encontra aqui</div>
+          <ul class="mb-0 text-secondary">
+            <li>Câmbio (USD/BRL e EUR/BRL) com status de atualização</li>
+            <li>Busca de ações (em breve)</li>
+            <li>Explicações com IA (foco educativo)</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Market Section -->
+  <div id="market" class="d-flex align-items-center justify-content-between mb-3">
+    <h4 class="mb-0">Câmbio</h4>
+    <div id="market-status" class="muted-small"></div>
+  </div>
+
+  <!-- estados -->
+  <div id="market-loading" class="text-center py-5 d-none">
+    <div class="spinner-border" role="status"></div>
+    <div class="mt-2 text-secondary">Carregando dados…</div>
+  </div>
+
+  <div id="market-error" class="alert alert-danger d-none" role="alert"></div>
+
+  <!-- cards -->
+  <div id="market-cards" class="row g-3"></div>
+
+  <!-- Stocks Section (placeholder) -->
+<section id="stocks" class="mt-5">
+  <h4 class="mb-3">Ações</h4>
+
+  <div class="card p-4">
+    <p class="text-secondary mb-3">
+      Pesquise uma ação para visualizar indicadores, contexto de mercado e explicações educativas.
+    </p>
+
+<div class="input-group">
+  <input
+    id="stock-input"
+    type="text"
+    class="form-control"
+    placeholder="Ex: PETR4 ou Petrobras"
+    autocomplete="off"
+  />
+  <button id="stock-search-btn" class="btn btn-primary">Buscar</button>
+</div>
+
+<!-- resultados -->
+<div id="stock-results" class="list-group mt-2 d-none"></div>
+
+<div id="stock-search-error" class="text-danger mt-2 d-none">
+  Digite pelo menos 2 caracteres.
+</div>
+</section>
+</main>
+
+    <!-- Bootstrap JS (opcional, mas útil) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
