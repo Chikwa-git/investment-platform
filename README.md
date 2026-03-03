@@ -18,6 +18,7 @@
 - [Overview](#overview)
 - [The Problem](#the-problem)
 - [Current Implementation](#current-implementation)
+- [AI-Powered Education Engine](#ai-powered-education-engine)
 - [Project Structure](#project-structure)
 - [Technology Stack](#technology-stack)
 - [Getting Started](#getting-started)
@@ -34,8 +35,9 @@ Rather than offering advanced trading tools, this project focuses on:
 - ✅ Clarity in data presentation
 - ✅ Clear information structure
 - ✅ Contextual understanding of market movements
+- ✅ **AI-powered educational insights** on market factors and indicators
 
-This project is developed as a **portfolio-driven backend engineering exercise**, emphasizing architecture, clean structure, and progressive system evolution.
+This project is developed as a **portfolio-driven backend engineering exercise**, emphasizing architecture, clean structure, and progressive system evolution. It integrates AI-driven education to transform raw market data into actionable understanding for beginners.
 
 ## 🚨 The Problem
 
@@ -63,6 +65,42 @@ Beginner investors often face **information overload**. Typical financial platfo
 - ✅ Basic interface for stock search
 - ✅ Dynamic data fetching from backend API
 - ✅ Initial structure for future visualization expansion
+
+### 🤖 AI-Powered Education Engine (In Development)
+- 📌 **AI-Generated Insights** (Educational Preview Mode)
+  - Summary of relevant market facts and key developments
+  - Educational analysis of how factors influence current stock price
+  - Contextual explanations of market dynamics and their impact
+  - Educational breakdown of how technical indicators affect decision-making
+  
+> ⚠️ **Important:** This feature is purely **educational** and for learning purposes only. It does NOT provide buy/sell recommendations or investment advice. Users are encouraged to conduct their own research before making investment decisions.
+
+## 🤖 AI-Powered Education Engine
+
+The Investment Platform integrates AI-driven educational features designed to transform raw market data into meaningful, digestible insights for beginner investors.
+
+### What It Does
+
+**The AI educator provides:**
+
+1. **📊 Relevant Facts Summary** - Aggregates key market events, earnings reports, news, and economic indicators affecting the stock
+
+2. **📈 Educational Price Impact Analysis** - Explains *how* and *why* specific factors influence the current stock price in understandable terms
+
+3. **🎓 Market Dynamics Explanation** - Breaks down complex market phenomena into contextual, learner-friendly explanations
+
+4. **📐 Technical Indicator Education** - Shows how indicators (MA, RSI, MACD, etc.) work and their role in investment decision-making
+
+### Educational Focus, Not Trading Signals
+
+⚠️ **Critical Distinction:** This feature is **purely educational**:
+- ❌ Does NOT recommend buying or selling stocks
+- ❌ Does NOT provide investment advice
+- ✅ Focuses on explaining market mechanics
+- ✅ Helps users develop financial literacy
+- ✅ Encourages independent research and critical thinking
+
+The goal is to empower beginners to *understand* the market, not to tell them *what to do*.
 
 ## 📁 Project Structure
 
