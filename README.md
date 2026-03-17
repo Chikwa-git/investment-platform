@@ -1,3 +1,5 @@
+Project currently on hold due to technical difficulties 
+
 <div align="center">
 
 <img src="https://img.shields.io/badge/Investment%20Platform-v1.0-blue?style=for-the-badge&logo=python" alt="Investment Platform Banner">
